@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9F15A264-C667-47D1-AFFE-850913117A49"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9161B57-53B7-4F3C-BA3A-8BC68E60AB36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airmont Player tvOS/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4"
+            endingLineNumber = "4"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B9161B57-53B7-4F3C-BA3A-8BC68E60AB36 - 418e42a8ed2fefc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Airmont_Player.AppDelegate.__allocating_init() -&gt; Airmont_Player.AppDelegate"
+                  moduleName = "Airmont Player"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/goudalf/Airmont/AirmontPlayer/Airmont%20Player%20tvOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "B9161B57-53B7-4F3C-BA3A-8BC68E60AB36 - 18017478ce36d0b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Airmont_Player.AppDelegate.init() -&gt; Airmont_Player.AppDelegate"
+                  moduleName = "Airmont Player"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/goudalf/Airmont/AirmontPlayer/Airmont%20Player%20tvOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "B9161B57-53B7-4F3C-BA3A-8BC68E60AB36 - 153818af12ca2fae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Airmont_Player.AppDelegate.__deallocating_deinit"
+                  moduleName = "Airmont Player"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/goudalf/Airmont/AirmontPlayer/Airmont%20Player%20tvOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "B9161B57-53B7-4F3C-BA3A-8BC68E60AB36 - 2f251756418340f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Airmont Player"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/goudalf/Airmont/AirmontPlayer/Airmont%20Player%20tvOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66AA2CDC-EE3F-4F6A-A03B-4809997A0B31"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airmont Player tvOS/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D022789E-7A1E-4C22-A8A8-0DE47371A185"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airmont Player tvOS/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
+            landmarkName = "checkService()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

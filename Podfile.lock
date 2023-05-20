@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - DropDown (2.3.13)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - MobileVLCKit (3.3.17)
+  - ScrollableSegmentedControl (1.5.0)
+  - TVVLCKit (3.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AlamofireImage (~> 3.3)
+  - DropDown (~> 2.3.4)
+  - GCDWebServer (~> 3.0)
+  - MobileVLCKit (~> 3.3.0)
+  - ScrollableSegmentedControl (~> 1.5.0)
+  - TVVLCKit (~> 3.4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - DropDown
+    - GCDWebServer
+    - MobileVLCKit
+    - ScrollableSegmentedControl
+    - TVVLCKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  MobileVLCKit: c5dd1b0ae933dc9c2348099840e753496dcdd908
+  ScrollableSegmentedControl: 2e64bbe8968a7fcd8aae5014434481464fcdfe60
+  TVVLCKit: fe80e9f1eff6efdedeab9b0dcba360e0225c9bdc
+
+PODFILE CHECKSUM: ac1cc49b270d50a640096eb8a6ed00627ea82e9a
+
+COCOAPODS: 1.11.3

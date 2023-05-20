@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C942AD2A14A6C900BF3BD2 /* SFUIText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942AC2A14A6C800BF3BD2 /* SFUIText-Regular.otf */; };
+		03C942AE2A14A6C900BF3BD2 /* SFUIText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942AC2A14A6C800BF3BD2 /* SFUIText-Regular.otf */; };
+		03C942B02A14A83D00BF3BD2 /* SFUIText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942AF2A14A83D00BF3BD2 /* SFUIText-Heavy.otf */; };
+		03C942B12A14A83D00BF3BD2 /* SFUIText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942AF2A14A83D00BF3BD2 /* SFUIText-Heavy.otf */; };
+		03C942B32A14A86600BF3BD2 /* SFUIText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942B22A14A86600BF3BD2 /* SFUIText-Bold.otf */; };
+		03C942B42A14A86600BF3BD2 /* SFUIText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942B22A14A86600BF3BD2 /* SFUIText-Bold.otf */; };
+		03C942B62A14A87800BF3BD2 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942B52A14A87800BF3BD2 /* SFUIText-Medium.otf */; };
+		03C942B72A14A87800BF3BD2 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942B52A14A87800BF3BD2 /* SFUIText-Medium.otf */; };
+		03E57B142A0F5CA50047C7E2 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E57B132A0F5CA50047C7E2 /* MainMenu.storyboard */; };
+		03E57B172A0F5CF30047C7E2 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E57B162A0F5CF30047C7E2 /* MainMenuViewController.swift */; };
+		03E57B192A0F78C90047C7E2 /* ChannelSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E57B182A0F78C90047C7E2 /* ChannelSelection.storyboard */; };
+		03E57B1B2A0F78DC0047C7E2 /* ChannelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E57B1A2A0F78DC0047C7E2 /* ChannelSelectionViewController.swift */; };
+		03E57B1E2A0F8E730047C7E2 /* SelectChannelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E57B1D2A0F8E730047C7E2 /* SelectChannelCollectionCell.swift */; };
+		03E57B202A0FC2860047C7E2 /* VideoPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E57B1F2A0FC2860047C7E2 /* VideoPlayer.storyboard */; };
+		03E57B222A0FC29D0047C7E2 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E57B212A0FC29D0047C7E2 /* VideoPlayerViewController.swift */; };
+		03E57B252A0FEE0A0047C7E2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E57B242A0FEE0A0047C7E2 /* UIView+Extension.swift */; };
+		1EFA4588C01CD99EA79E31D3 /* Pods_Airmont_Player_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838A6A8603EAFD9033A09237 /* Pods_Airmont_Player_tvOS.framework */; };
+		41015BE525701D45005497DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41015BE425701D45005497DC /* LaunchScreen.storyboard */; };
+		412C56CD26D527DA005162FD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C56CC26D527DA005162FD /* SearchViewController.swift */; };
+		412C56ED26D7BDB1005162FD /* SearchNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C56EC26D7BDB1005162FD /* SearchNavController.swift */; };
+		413B8EB025FBD2EB00A9561A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B8EAF25FBD2EB00A9561A /* FavoritesViewController.swift */; };
+		414455AA25DA741D00D9B6C1 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414455A925DA741D00D9B6C1 /* APError.swift */; };
+		414455AB25DA741D00D9B6C1 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414455A925DA741D00D9B6C1 /* APError.swift */; };
+		4152FC4D2608A4CF002EC653 /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152FC4C2608A4CF002EC653 /* ProfilesViewController.swift */; };
+		4152FC512608A647002EC653 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152FC502608A647002EC653 /* FavoritesViewController.swift */; };
+		4152FC552608A79A002EC653 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152FC542608A79A002EC653 /* TabBarViewController.swift */; };
+		4159009B286AF22F00AEFC03 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159009A286AF22E00AEFC03 /* SearchViewController.swift */; };
+		4165937C25FA3B1D000A4C38 /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4165937B25FA3B1D000A4C38 /* ProfilesViewController.swift */; };
+		4165938025FA6648000A4C38 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4165937F25FA6648000A4C38 /* OverlayViewController.swift */; };
+		417798DA256C0E7F0009C678 /* SelfSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417798D9256C0E7F0009C678 /* SelfSizedTableView.swift */; };
+		417798E0256C2BE70009C678 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417798DF256C2BE70009C678 /* User.swift */; };
+		417B5CD026CA6AF900FF72E8 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B5CCF26CA6AF900FF72E8 /* CategoriesViewController.swift */; };
+		417B5CD226CA9CF300FF72E8 /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B5CD126CA9CF300FF72E8 /* ChannelsViewController.swift */; };
+		417D208D27B2884000ED7C27 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D208C27B2884000ED7C27 /* OverlayViewController.swift */; };
+		4188D49E2577C93A00C533DB /* IPTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419380342567E07D00E10821 /* IPTV.swift */; };
+		4188D4A42577C97400C533DB /* SelfSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417798D9256C0E7F0009C678 /* SelfSizedTableView.swift */; };
+		4188D4A92577C9BD00C533DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417798DF256C2BE70009C678 /* User.swift */; };
+		4188D4AC257A459500C533DB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 419380382568093900E10821 /* Settings.bundle */; };
+		419380352567E07D00E10821 /* IPTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419380342567E07D00E10821 /* IPTV.swift */; };
+		419380392568093900E10821 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 419380382568093900E10821 /* Settings.bundle */; };
+		41A3F12426CAAE8400E9825C /* SourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3F12326CAAE8400E9825C /* SourcesViewController.swift */; };
+		41A3F12626CFA7EC00E9825C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3F12526CFA7EC00E9825C /* API.swift */; };
+		41A3F12726CFA7EC00E9825C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3F12526CFA7EC00E9825C /* API.swift */; };
+		41A3F12926CFACCA00E9825C /* SourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3F12826CFACCA00E9825C /* SourcesViewController.swift */; };
+		41A3F12B26CFB19100E9825C /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3F12A26CFB19100E9825C /* CategoriesViewController.swift */; };
+		41A3F12D26CFB3C800E9825C /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3F12C26CFB3C800E9825C /* ChannelsViewController.swift */; };
+		41AD89F6251B78F100725663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD89F5251B78F100725663 /* AppDelegate.swift */; };
+		41AD89F8251B78F100725663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD89F7251B78F100725663 /* SceneDelegate.swift */; };
+		41AD89FA251B78F100725663 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD89F9251B78F100725663 /* ViewController.swift */; };
+		41AD89FD251B78F100725663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD89FB251B78F100725663 /* Main.storyboard */; };
+		41AD89FF251B78F400725663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD89FE251B78F400725663 /* Assets.xcassets */; };
+		41AFA56C2864A8E1008739FD /* ChannelsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AFA56B2864A8E1008739FD /* ChannelsRootViewController.swift */; };
+		41B7DADA2600D72100886CDA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B7DAD92600D72100886CDA /* TabBarViewController.swift */; };
+		41D64BBB2732CFBB00E936F3 /* MoreMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D64BBA2732CFBB00E936F3 /* MoreMenuViewController.swift */; };
+		41DB32A327147E8D004A0AEB /* DNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB32A227147E8D004A0AEB /* DNS.swift */; };
+		41DB32A427147E8D004A0AEB /* DNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB32A227147E8D004A0AEB /* DNS.swift */; };
+		41E9A2EF25C80D4100FEC062 /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9A2EE25C80D4100FEC062 /* Gateway.swift */; };
+		41E9A2F025C80D4100FEC062 /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9A2EE25C80D4100FEC062 /* Gateway.swift */; };
+		62A0EA739E1E889438CACE95 /* Pods_Airmont_Player_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342BAA115567D82C4701D8AB /* Pods_Airmont_Player_iOS.framework */; };
+		FFF926F820A58744008E37FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF926F720A58744008E37FD /* AppDelegate.swift */; };
+		FFF926FA20A58744008E37FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF926F920A58744008E37FD /* ViewController.swift */; };
+		FFF926FD20A58744008E37FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF926FB20A58744008E37FD /* Main.storyboard */; };
+		FFF926FF20A58745008E37FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF926FE20A58745008E37FD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41E7FCDA250BAF25008D88B5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03C942AC2A14A6C800BF3BD2 /* SFUIText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.otf"; sourceTree = "<group>"; };
+		03C942AF2A14A83D00BF3BD2 /* SFUIText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Heavy.otf"; sourceTree = "<group>"; };
+		03C942B22A14A86600BF3BD2 /* SFUIText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.otf"; sourceTree = "<group>"; };
+		03C942B52A14A87800BF3BD2 /* SFUIText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.otf"; sourceTree = "<group>"; };
+		03E57B132A0F5CA50047C7E2 /* MainMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
+		03E57B162A0F5CF30047C7E2 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		03E57B182A0F78C90047C7E2 /* ChannelSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelSelection.storyboard; sourceTree = "<group>"; };
+		03E57B1A2A0F78DC0047C7E2 /* ChannelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSelectionViewController.swift; sourceTree = "<group>"; };
+		03E57B1D2A0F8E730047C7E2 /* SelectChannelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectChannelCollectionCell.swift; sourceTree = "<group>"; };
+		03E57B1F2A0FC2860047C7E2 /* VideoPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoPlayer.storyboard; sourceTree = "<group>"; };
+		03E57B212A0FC29D0047C7E2 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		03E57B242A0FEE0A0047C7E2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		342BAA115567D82C4701D8AB /* Pods_Airmont_Player_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airmont_Player_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41015BE425701D45005497DC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		412C56CC26D527DA005162FD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		412C56EC26D7BDB1005162FD /* SearchNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavController.swift; sourceTree = "<group>"; };
+		413B8EAF25FBD2EB00A9561A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		414455A925DA741D00D9B6C1 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		4152FC4C2608A4CF002EC653 /* ProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
+		4152FC502608A647002EC653 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		4152FC542608A79A002EC653 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4159009A286AF22E00AEFC03 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4165937B25FA3B1D000A4C38 /* ProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
+		4165937F25FA6648000A4C38 /* OverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
+		417798D9256C0E7F0009C678 /* SelfSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizedTableView.swift; sourceTree = "<group>"; };
+		417798DF256C2BE70009C678 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		417B5CCF26CA6AF900FF72E8 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		417B5CD126CA9CF300FF72E8 /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
+		417D208C27B2884000ED7C27 /* OverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
+		419380342567E07D00E10821 /* IPTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTV.swift; sourceTree = "<group>"; };
+		419380382568093900E10821 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		41A3F12326CAAE8400E9825C /* SourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesViewController.swift; sourceTree = "<group>"; };
+		41A3F12526CFA7EC00E9825C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		41A3F12826CFACCA00E9825C /* SourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesViewController.swift; sourceTree = "<group>"; };
+		41A3F12A26CFB19100E9825C /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		41A3F12C26CFB3C800E9825C /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
+		41AD89F3251B78F100725663 /* Airmont Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airmont Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AD89F5251B78F100725663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41AD89F7251B78F100725663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41AD89F9251B78F100725663 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41AD89FC251B78F100725663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41AD89FE251B78F400725663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41AD8A03251B78F400725663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AFA56B2864A8E1008739FD /* ChannelsRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsRootViewController.swift; sourceTree = "<group>"; };
+		41B7DAD92600D72100886CDA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		41D64BBA2732CFBB00E936F3 /* MoreMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMenuViewController.swift; sourceTree = "<group>"; };
+		41DB32A227147E8D004A0AEB /* DNS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNS.swift; sourceTree = "<group>"; };
+		41E7FCCE250BAF25008D88B5 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		41E9A2EE25C80D4100FEC062 /* Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
+		838A6A8603EAFD9033A09237 /* Pods_Airmont_Player_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airmont_Player_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AD62B3DB83C3413937CF48 /* Pods-Airmont Player tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airmont Player tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airmont Player tvOS/Pods-Airmont Player tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C9178F16D3BB3A652568AF99 /* Pods-Airmont Player iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airmont Player iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airmont Player iOS/Pods-Airmont Player iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F66D487E1A9A6D5F861DF364 /* Pods-Airmont Player tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airmont Player tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airmont Player tvOS/Pods-Airmont Player tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		F79B6C65AEDE13D22972BB24 /* Pods-Airmont Player iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airmont Player iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airmont Player iOS/Pods-Airmont Player iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FF3E331D20A5885400EAE363 /* AirmontPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirmontPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFA0D52320A59E1D007AE619 /* libTVVLCKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTVVLCKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA0D52520A59F0F007AE619 /* DynamicTVVLCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DynamicTVVLCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF926F420A58744008E37FD /* Airmont Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airmont Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF926F720A58744008E37FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFF926F920A58744008E37FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFF926FC20A58744008E37FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFF926FE20A58745008E37FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFF9270020A58745008E37FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41AD89F0251B78F100725663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A0EA739E1E889438CACE95 /* Pods_Airmont_Player_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF926F120A58744008E37FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFA4588C01CD99EA79E31D3 /* Pods_Airmont_Player_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C942AB2A14A6BC00BF3BD2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				03C942B52A14A87800BF3BD2 /* SFUIText-Medium.otf */,
+				03C942B22A14A86600BF3BD2 /* SFUIText-Bold.otf */,
+				03C942AF2A14A83D00BF3BD2 /* SFUIText-Heavy.otf */,
+				03C942AC2A14A6C800BF3BD2 /* SFUIText-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		03E57B122A0F5C620047C7E2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				41AD89FB251B78F100725663 /* Main.storyboard */,
+				03E57B132A0F5CA50047C7E2 /* MainMenu.storyboard */,
+				03E57B182A0F78C90047C7E2 /* ChannelSelection.storyboard */,
+				03E57B1F2A0FC2860047C7E2 /* VideoPlayer.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		03E57B152A0F5CAD0047C7E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				03E57B262A1127CD0047C7E2 /* VideoPlayerViewController */,
+				03E57B1C2A0F8E4F0047C7E2 /* Cell */,
+				4152FC4C2608A4CF002EC653 /* ProfilesViewController.swift */,
+				4152FC502608A647002EC653 /* FavoritesViewController.swift */,
+				4152FC542608A79A002EC653 /* TabBarViewController.swift */,
+				41A3F12826CFACCA00E9825C /* SourcesViewController.swift */,
+				4159009A286AF22E00AEFC03 /* SearchViewController.swift */,
+				41A3F12C26CFB3C800E9825C /* ChannelsViewController.swift */,
+				41A3F12A26CFB19100E9825C /* CategoriesViewController.swift */,
+				41AD89F9251B78F100725663 /* ViewController.swift */,
+				03E57B162A0F5CF30047C7E2 /* MainMenuViewController.swift */,
+				03E57B1A2A0F78DC0047C7E2 /* ChannelSelectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		03E57B1C2A0F8E4F0047C7E2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				03E57B1D2A0F8E730047C7E2 /* SelectChannelCollectionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		03E57B232A0FEDF90047C7E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03E57B242A0FEE0A0047C7E2 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03E57B262A1127CD0047C7E2 /* VideoPlayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03E57B212A0FC29D0047C7E2 /* VideoPlayerViewController.swift */,
+			);
+			path = VideoPlayerViewController;
+			sourceTree = "<group>";
+		};
+		04AE6ADEEE24C899927563A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F79B6C65AEDE13D22972BB24 /* Pods-Airmont Player iOS.debug.xcconfig */,
+				C9178F16D3BB3A652568AF99 /* Pods-Airmont Player iOS.release.xcconfig */,
+				B8AD62B3DB83C3413937CF48 /* Pods-Airmont Player tvOS.debug.xcconfig */,
+				F66D487E1A9A6D5F861DF364 /* Pods-Airmont Player tvOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4188D49A2577C8F700C533DB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				41A3F12526CFA7EC00E9825C /* API.swift */,
+				417798DF256C2BE70009C678 /* User.swift */,
+				41E9A2EE25C80D4100FEC062 /* Gateway.swift */,
+				419380342567E07D00E10821 /* IPTV.swift */,
+				417798D9256C0E7F0009C678 /* SelfSizedTableView.swift */,
+				419380382568093900E10821 /* Settings.bundle */,
+				414455A925DA741D00D9B6C1 /* APError.swift */,
+				41DB32A227147E8D004A0AEB /* DNS.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		41AD89F4251B78F100725663 /* Airmont Player iOS */ = {
+			isa = PBXGroup;
+			children = (
+				03C942AB2A14A6BC00BF3BD2 /* Fonts */,
+				03E57B232A0FEDF90047C7E2 /* Extensions */,
+				03E57B152A0F5CAD0047C7E2 /* ViewControllers */,
+				03E57B122A0F5C620047C7E2 /* Storyboards */,
+				41AD89F5251B78F100725663 /* AppDelegate.swift */,
+				4165937F25FA6648000A4C38 /* OverlayViewController.swift */,
+				41AD89F7251B78F100725663 /* SceneDelegate.swift */,
+				41015BE425701D45005497DC /* LaunchScreen.storyboard */,
+				41AD89FE251B78F400725663 /* Assets.xcassets */,
+				41AD8A03251B78F400725663 /* Info.plist */,
+			);
+			path = "Airmont Player iOS";
+			sourceTree = "<group>";
+		};
+		FFA0D52220A59E1D007AE619 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0D52520A59F0F007AE619 /* DynamicTVVLCKit.framework */,
+				FFA0D52320A59E1D007AE619 /* libTVVLCKit.a */,
+				41E7FCCE250BAF25008D88B5 /* TVServices.framework */,
+				342BAA115567D82C4701D8AB /* Pods_Airmont_Player_iOS.framework */,
+				838A6A8603EAFD9033A09237 /* Pods_Airmont_Player_tvOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFF926EB20A58744008E37FD = {
+			isa = PBXGroup;
+			children = (
+				4188D49A2577C8F700C533DB /* Common */,
+				FFF926F620A58744008E37FD /* Airmont Player tvOS */,
+				41AD89F4251B78F100725663 /* Airmont Player iOS */,
+				FFF926F520A58744008E37FD /* Products */,
+				FFA0D52220A59E1D007AE619 /* Frameworks */,
+				04AE6ADEEE24C899927563A6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FFF926F520A58744008E37FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFF926F420A58744008E37FD /* Airmont Player.app */,
+				41AD89F3251B78F100725663 /* Airmont Player.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFF926F620A58744008E37FD /* Airmont Player tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				FFF926F720A58744008E37FD /* AppDelegate.swift */,
+				FFF926F920A58744008E37FD /* ViewController.swift */,
+				FFF926FB20A58744008E37FD /* Main.storyboard */,
+				41AFA56B2864A8E1008739FD /* ChannelsRootViewController.swift */,
+				417D208C27B2884000ED7C27 /* OverlayViewController.swift */,
+				412C56EC26D7BDB1005162FD /* SearchNavController.swift */,
+				41A3F12326CAAE8400E9825C /* SourcesViewController.swift */,
+				417B5CCF26CA6AF900FF72E8 /* CategoriesViewController.swift */,
+				417B5CD126CA9CF300FF72E8 /* ChannelsViewController.swift */,
+				41B7DAD92600D72100886CDA /* TabBarViewController.swift */,
+				4165937B25FA3B1D000A4C38 /* ProfilesViewController.swift */,
+				41D64BBA2732CFBB00E936F3 /* MoreMenuViewController.swift */,
+				413B8EAF25FBD2EB00A9561A /* FavoritesViewController.swift */,
+				FFF9270020A58745008E37FD /* Info.plist */,
+				FF3E331D20A5885400EAE363 /* AirmontPlayer-Bridging-Header.h */,
+				412C56CC26D527DA005162FD /* SearchViewController.swift */,
+				FFF926FE20A58745008E37FD /* Assets.xcassets */,
+			);
+			path = "Airmont Player tvOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41AD89F2251B78F100725663 /* Airmont Player iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AD8A1A251B78F400725663 /* Build configuration list for PBXNativeTarget "Airmont Player iOS" */;
+			buildPhases = (
+				F99918B2753CEA4D4FB18600 /* [CP] Check Pods Manifest.lock */,
+				41AD89EF251B78F100725663 /* Sources */,
+				41AD89F0251B78F100725663 /* Frameworks */,
+				41AD89F1251B78F100725663 /* Resources */,
+				4220D2DC4869FFEACE5C13DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Airmont Player iOS";
+			productName = "Airmont Player iOS";
+			productReference = 41AD89F3251B78F100725663 /* Airmont Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFF926F320A58744008E37FD /* Airmont Player tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF9270320A58745008E37FD /* Build configuration list for PBXNativeTarget "Airmont Player tvOS" */;
+			buildPhases = (
+				6C19EE7D99BBECF0C3B8E27E /* [CP] Check Pods Manifest.lock */,
+				FFF926F020A58744008E37FD /* Sources */,
+				FFF926F120A58744008E37FD /* Frameworks */,
+				FFF926F220A58744008E37FD /* Resources */,
+				359BFE6DEB56CC5BE592CA4A /* [CP] Embed Pods Frameworks */,
+				41E7FCDA250BAF25008D88B5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Airmont Player tvOS";
+			productName = SimplePlayback;
+			productReference = FFF926F420A58744008E37FD /* Airmont Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFF926EC20A58744008E37FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Airmont;
+				TargetAttributes = {
+					41AD89F2251B78F100725663 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					FFF926F320A58744008E37FD = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = FFF926EF20A58744008E37FD /* Build configuration list for PBXProject "Airmont Player" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFF926EB20A58744008E37FD;
+			productRefGroup = FFF926F520A58744008E37FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFF926F320A58744008E37FD /* Airmont Player tvOS */,
+				41AD89F2251B78F100725663 /* Airmont Player iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41AD89F1251B78F100725663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E57B142A0F5CA50047C7E2 /* MainMenu.storyboard in Resources */,
+				4188D4AC257A459500C533DB /* Settings.bundle in Resources */,
+				41015BE525701D45005497DC /* LaunchScreen.storyboard in Resources */,
+				03C942B72A14A87800BF3BD2 /* SFUIText-Medium.otf in Resources */,
+				41AD89FF251B78F400725663 /* Assets.xcassets in Resources */,
+				03E57B202A0FC2860047C7E2 /* VideoPlayer.storyboard in Resources */,
+				41AD89FD251B78F100725663 /* Main.storyboard in Resources */,
+				03C942AE2A14A6C900BF3BD2 /* SFUIText-Regular.otf in Resources */,
+				03C942B12A14A83D00BF3BD2 /* SFUIText-Heavy.otf in Resources */,
+				03C942B42A14A86600BF3BD2 /* SFUIText-Bold.otf in Resources */,
+				03E57B192A0F78C90047C7E2 /* ChannelSelection.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF926F220A58744008E37FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C942B62A14A87800BF3BD2 /* SFUIText-Medium.otf in Resources */,
+				FFF926FF20A58745008E37FD /* Assets.xcassets in Resources */,
+				419380392568093900E10821 /* Settings.bundle in Resources */,
+				03C942B32A14A86600BF3BD2 /* SFUIText-Bold.otf in Resources */,
+				03C942AD2A14A6C900BF3BD2 /* SFUIText-Regular.otf in Resources */,
+				FFF926FD20A58744008E37FD /* Main.storyboard in Resources */,
+				03C942B02A14A83D00BF3BD2 /* SFUIText-Heavy.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		359BFE6DEB56CC5BE592CA4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Airmont Player tvOS/Pods-Airmont Player tvOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Airmont Player tvOS/Pods-Airmont Player tvOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Airmont Player tvOS/Pods-Airmont Player tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4220D2DC4869FFEACE5C13DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Airmont Player iOS/Pods-Airmont Player iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Airmont Player iOS/Pods-Airmont Player iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Airmont Player iOS/Pods-Airmont Player iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C19EE7D99BBECF0C3B8E27E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Airmont Player tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F99918B2753CEA4D4FB18600 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Airmont Player iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41AD89EF251B78F100725663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DB32A427147E8D004A0AEB /* DNS.swift in Sources */,
+				4188D49E2577C93A00C533DB /* IPTV.swift in Sources */,
+				414455AB25DA741D00D9B6C1 /* APError.swift in Sources */,
+				41A3F12D26CFB3C800E9825C /* ChannelsViewController.swift in Sources */,
+				4152FC4D2608A4CF002EC653 /* ProfilesViewController.swift in Sources */,
+				03E57B1B2A0F78DC0047C7E2 /* ChannelSelectionViewController.swift in Sources */,
+				41AD89FA251B78F100725663 /* ViewController.swift in Sources */,
+				03E57B222A0FC29D0047C7E2 /* VideoPlayerViewController.swift in Sources */,
+				41E9A2F025C80D4100FEC062 /* Gateway.swift in Sources */,
+				41AD89F6251B78F100725663 /* AppDelegate.swift in Sources */,
+				03E57B252A0FEE0A0047C7E2 /* UIView+Extension.swift in Sources */,
+				4188D4A92577C9BD00C533DB /* User.swift in Sources */,
+				4165938025FA6648000A4C38 /* OverlayViewController.swift in Sources */,
+				41A3F12726CFA7EC00E9825C /* API.swift in Sources */,
+				03E57B1E2A0F8E730047C7E2 /* SelectChannelCollectionCell.swift in Sources */,
+				4188D4A42577C97400C533DB /* SelfSizedTableView.swift in Sources */,
+				4159009B286AF22F00AEFC03 /* SearchViewController.swift in Sources */,
+				4152FC552608A79A002EC653 /* TabBarViewController.swift in Sources */,
+				4152FC512608A647002EC653 /* FavoritesViewController.swift in Sources */,
+				41AD89F8251B78F100725663 /* SceneDelegate.swift in Sources */,
+				41A3F12926CFACCA00E9825C /* SourcesViewController.swift in Sources */,
+				03E57B172A0F5CF30047C7E2 /* MainMenuViewController.swift in Sources */,
+				41A3F12B26CFB19100E9825C /* CategoriesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF926F020A58744008E37FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DB32A327147E8D004A0AEB /* DNS.swift in Sources */,
+				412C56CD26D527DA005162FD /* SearchViewController.swift in Sources */,
+				419380352567E07D00E10821 /* IPTV.swift in Sources */,
+				FFF926FA20A58744008E37FD /* ViewController.swift in Sources */,
+				41AFA56C2864A8E1008739FD /* ChannelsRootViewController.swift in Sources */,
+				412C56ED26D7BDB1005162FD /* SearchNavController.swift in Sources */,
+				417B5CD026CA6AF900FF72E8 /* CategoriesViewController.swift in Sources */,
+				41B7DADA2600D72100886CDA /* TabBarViewController.swift in Sources */,
+				41E9A2EF25C80D4100FEC062 /* Gateway.swift in Sources */,
+				4165937C25FA3B1D000A4C38 /* ProfilesViewController.swift in Sources */,
+				417D208D27B2884000ED7C27 /* OverlayViewController.swift in Sources */,
+				41A3F12626CFA7EC00E9825C /* API.swift in Sources */,
+				414455AA25DA741D00D9B6C1 /* APError.swift in Sources */,
+				417798E0256C2BE70009C678 /* User.swift in Sources */,
+				FFF926F820A58744008E37FD /* AppDelegate.swift in Sources */,
+				417798DA256C0E7F0009C678 /* SelfSizedTableView.swift in Sources */,
+				41D64BBB2732CFBB00E936F3 /* MoreMenuViewController.swift in Sources */,
+				417B5CD226CA9CF300FF72E8 /* ChannelsViewController.swift in Sources */,
+				413B8EB025FBD2EB00A9561A /* FavoritesViewController.swift in Sources */,
+				41A3F12426CAAE8400E9825C /* SourcesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41AD89FB251B78F100725663 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41AD89FC251B78F100725663 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFF926FB20A58744008E37FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF926FC20A58744008E37FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41AD8A1B251B78F400725663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79B6C65AEDE13D22972BB24 /* Pods-Airmont Player iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LT38M5D42B;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Airmont Player iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airmont.player;
+				PRODUCT_NAME = "Airmont Player";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41AD8A1C251B78F400725663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9178F16D3BB3A652568AF99 /* Pods-Airmont Player iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LT38M5D42B;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Airmont Player iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airmont.player;
+				PRODUCT_NAME = "Airmont Player";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFF9270120A58745008E37FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Debug;
+		};
+		FFF9270220A58745008E37FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFF9270420A58745008E37FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8AD62B3DB83C3413937CF48 /* Pods-Airmont Player tvOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LT38M5D42B;
+				INFOPLIST_FILE = "Airmont Player tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airmont.player;
+				PRODUCT_NAME = "Airmont Player";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Airmont Player tvOS/AirmontPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		FFF9270520A58745008E37FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66D487E1A9A6D5F861DF364 /* Pods-Airmont Player tvOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LT38M5D42B;
+				INFOPLIST_FILE = "Airmont Player tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airmont.player;
+				PRODUCT_NAME = "Airmont Player";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Airmont Player tvOS/AirmontPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41AD8A1A251B78F400725663 /* Build configuration list for PBXNativeTarget "Airmont Player iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD8A1B251B78F400725663 /* Debug */,
+				41AD8A1C251B78F400725663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF926EF20A58744008E37FD /* Build configuration list for PBXProject "Airmont Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF9270120A58745008E37FD /* Debug */,
+				FFF9270220A58745008E37FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF9270320A58745008E37FD /* Build configuration list for PBXNativeTarget "Airmont Player tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF9270420A58745008E37FD /* Debug */,
+				FFF9270520A58745008E37FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFF926EC20A58744008E37FD /* Project object */;
+}

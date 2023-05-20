@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "Template---App-Icon-Small---400x240_L1.jpg",
+      "idiom" : "tv",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Template---App-Icon-Small---400x240-(P3)@2x_L1.jpg",
+      "idiom" : "tv",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

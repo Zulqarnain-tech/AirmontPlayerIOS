@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "Template---Top-Shelf---HDTV---1920x1080-(P1)-L1.png",
+      "idiom" : "tv",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Template---Top-Shelf---HDTV---1920x1080-(P3)@2x-4K-L1.png",
+      "idiom" : "tv",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

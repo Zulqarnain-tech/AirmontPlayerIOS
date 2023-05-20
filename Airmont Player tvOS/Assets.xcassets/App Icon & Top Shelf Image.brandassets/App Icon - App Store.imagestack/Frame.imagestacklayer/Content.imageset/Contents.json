@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Template---App-Icon---AppStore---1280x768_L2.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

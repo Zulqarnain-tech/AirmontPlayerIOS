@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0389198F2A1D53330022D365 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0389198E2A1D53330022D365 /* SplashScreenVC.swift */; };
+		038919922A1D57980022D365 /* Swift+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038919912A1D57980022D365 /* Swift+GIF.swift */; };
+		038919942A1D59150022D365 /* airmont.gif in Resources */ = {isa = PBXBuildFile; fileRef = 038919932A1D59150022D365 /* airmont.gif */; };
 		03C942AD2A14A6C900BF3BD2 /* SFUIText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942AC2A14A6C800BF3BD2 /* SFUIText-Regular.otf */; };
 		03C942AE2A14A6C900BF3BD2 /* SFUIText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942AC2A14A6C800BF3BD2 /* SFUIText-Regular.otf */; };
 		03C942B02A14A83D00BF3BD2 /* SFUIText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03C942AF2A14A83D00BF3BD2 /* SFUIText-Heavy.otf */; };
@@ -86,6 +89,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0389198E2A1D53330022D365 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		038919912A1D57980022D365 /* Swift+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+GIF.swift"; sourceTree = "<group>"; };
+		038919932A1D59150022D365 /* airmont.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = airmont.gif; sourceTree = "<group>"; };
 		03C942AC2A14A6C800BF3BD2 /* SFUIText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.otf"; sourceTree = "<group>"; };
 		03C942AF2A14A83D00BF3BD2 /* SFUIText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Heavy.otf"; sourceTree = "<group>"; };
 		03C942B22A14A86600BF3BD2 /* SFUIText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.otf"; sourceTree = "<group>"; };
@@ -171,6 +177,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		038919902A1D57840022D365 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				038919912A1D57980022D365 /* Swift+GIF.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		03C942AB2A14A6BC00BF3BD2 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +222,7 @@
 				41AD89F9251B78F100725663 /* ViewController.swift */,
 				03E57B162A0F5CF30047C7E2 /* MainMenuViewController.swift */,
 				03E57B1A2A0F78DC0047C7E2 /* ChannelSelectionViewController.swift */,
+				0389198E2A1D53330022D365 /* SplashScreenVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -265,6 +280,7 @@
 		41AD89F4251B78F100725663 /* Airmont Player iOS */ = {
 			isa = PBXGroup;
 			children = (
+				038919902A1D57840022D365 /* Utility */,
 				03C942AB2A14A6BC00BF3BD2 /* Fonts */,
 				03E57B232A0FEDF90047C7E2 /* Extensions */,
 				03E57B152A0F5CAD0047C7E2 /* ViewControllers */,
@@ -272,6 +288,7 @@
 				41AD89F5251B78F100725663 /* AppDelegate.swift */,
 				4165937F25FA6648000A4C38 /* OverlayViewController.swift */,
 				41AD89F7251B78F100725663 /* SceneDelegate.swift */,
+				038919932A1D59150022D365 /* airmont.gif */,
 				41015BE425701D45005497DC /* LaunchScreen.storyboard */,
 				41AD89FE251B78F400725663 /* Assets.xcassets */,
 				41AD8A03251B78F400725663 /* Info.plist */,
@@ -421,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E57B142A0F5CA50047C7E2 /* MainMenu.storyboard in Resources */,
+				038919942A1D59150022D365 /* airmont.gif in Resources */,
 				4188D4AC257A459500C533DB /* Settings.bundle in Resources */,
 				41015BE525701D45005497DC /* LaunchScreen.storyboard in Resources */,
 				03C942B72A14A87800BF3BD2 /* SFUIText-Medium.otf in Resources */,
@@ -535,6 +553,8 @@
 				41DB32A427147E8D004A0AEB /* DNS.swift in Sources */,
 				4188D49E2577C93A00C533DB /* IPTV.swift in Sources */,
 				414455AB25DA741D00D9B6C1 /* APError.swift in Sources */,
+				038919922A1D57980022D365 /* Swift+GIF.swift in Sources */,
+				0389198F2A1D53330022D365 /* SplashScreenVC.swift in Sources */,
 				41A3F12D26CFB3C800E9825C /* ChannelsViewController.swift in Sources */,
 				4152FC4D2608A4CF002EC653 /* ProfilesViewController.swift in Sources */,
 				03E57B1B2A0F78DC0047C7E2 /* ChannelSelectionViewController.swift in Sources */,

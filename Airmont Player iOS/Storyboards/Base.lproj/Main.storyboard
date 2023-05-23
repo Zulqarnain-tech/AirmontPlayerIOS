@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZyE-xG-uOY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -78,6 +78,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjI-Jd-KPF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="438" y="-627"/>
+        </scene>
+        <!--Splash ScreenVC-->
+        <scene sceneID="5UH-bn-8vC">
+            <objects>
+                <viewController id="ZyE-xG-uOY" customClass="SplashScreenVC" customModule="Airmont_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CLW-fq-Qu9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MessageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gyb-GM-3Ir">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nQw-lL-bgH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gyb-GM-3Ir" firstAttribute="leading" secondItem="CLW-fq-Qu9" secondAttribute="leading" id="3ES-gE-TFA"/>
+                            <constraint firstAttribute="bottom" secondItem="gyb-GM-3Ir" secondAttribute="bottom" id="KbD-lg-R8a"/>
+                            <constraint firstAttribute="trailing" secondItem="gyb-GM-3Ir" secondAttribute="trailing" id="h04-5q-6Nz"/>
+                            <constraint firstItem="gyb-GM-3Ir" firstAttribute="top" secondItem="CLW-fq-Qu9" secondAttribute="top" id="wRN-zc-WVh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gifImageView" destination="gyb-GM-3Ir" id="fqF-cJ-C6y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dY-s8-9eK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1562.3188405797102" y="-594.64285714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

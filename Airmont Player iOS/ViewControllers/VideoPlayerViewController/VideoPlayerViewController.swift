@@ -35,6 +35,7 @@ class VideoPlayerViewController: UIViewController {
     var current_password: String = ""
     var current_guest: Bool = false
     var nwmonitor = NWPathMonitor()
+    var timer: Timer?
     
     
     // MARK: - View Life Cycle Methods
@@ -51,7 +52,7 @@ class VideoPlayerViewController: UIViewController {
         let queue = DispatchQueue.global(qos: .background)
         nwmonitor.start(queue: queue)
         
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(checkService), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(checkService), userInfo: nil, repeats: true)
 
         UIApplication.shared.isIdleTimerDisabled = true
         mediaPlayer = VLCMediaPlayer(options: ["--ipv4-timeout=2000"])
@@ -98,7 +99,11 @@ class VideoPlayerViewController: UIViewController {
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-
+        
+        timer?.invalidate()
+        timer = nil
+        
+        NotificationCenter.default.removeObserver(self)
         print("VIEW DISAPPEAR")
         if (webServer != nil) {
             webServer.stop()
@@ -205,7 +210,7 @@ class VideoPlayerViewController: UIViewController {
         }
     }
     
-    @objc func checkService()
+    @objc func   checkService()
     {
         print("NETWORK PATH STATUS: \(nwmonitor.currentPath.status)")
         if (nwmonitor.currentPath.status != .satisfied) {

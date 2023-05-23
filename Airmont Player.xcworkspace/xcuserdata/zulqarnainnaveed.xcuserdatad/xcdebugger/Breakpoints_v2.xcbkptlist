@@ -420,14 +420,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "287D0E56-7F7C-4BE8-820A-4B82E9FE7AF2 - 489247ab2beb198f"
+                  uuid = "287D0E56-7F7C-4BE8-820A-4B82E9FE7AF2 - 55d7e9f3fe1432c4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "static Airmont_Player.IPTV.fetchChannels(completed: () -&gt; ()) -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Downloads/AirmontPlayer_source/Common/IPTV.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/IPTV.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "449"
@@ -435,14 +435,14 @@
                   offsetFromSymbolStart = "1896">
                </Location>
                <Location
-                  uuid = "287D0E56-7F7C-4BE8-820A-4B82E9FE7AF2 - 4c65c97afcd23709"
+                  uuid = "287D0E56-7F7C-4BE8-820A-4B82E9FE7AF2 - 51206722292d1cbe"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.IPTV.fetchChannels(completed: () -&gt; ()) -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Downloads/AirmontPlayer_source/Common/IPTV.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/IPTV.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "451"
@@ -660,14 +660,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "CFF27CF5-326D-4E06-A2A7-9AADA697DE28 - bbd100c76db288"
+                  uuid = "CFF27CF5-326D-4E06-A2A7-9AADA697DE28 - 1dfe7f581292dbc1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; () in static Airmont_Player.IPTV.initialize(completed: () -&gt; ()) -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Downloads/AirmontPlayer_source/Common/IPTV.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/IPTV.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "114"
@@ -675,14 +675,14 @@
                   offsetFromSymbolStart = "44">
                </Location>
                <Location
-                  uuid = "CFF27CF5-326D-4E06-A2A7-9AADA697DE28 - 18ca534d19e77686"
+                  uuid = "CFF27CF5-326D-4E06-A2A7-9AADA697DE28 - 58ffd15cc181fd1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; () in static Airmont_Player.IPTV.initialize(completed: () -&gt; ()) -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Downloads/AirmontPlayer_source/Common/IPTV.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/IPTV.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "115"
@@ -820,14 +820,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "22234637-ED87-4C0B-A22F-EFF28150BE34 - cc82ef899c1c9d9a"
+                  uuid = "22234637-ED87-4C0B-A22F-EFF28150BE34 - d1c741d149e38751"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.IPTV.setChannel(id: Swift.Int, completed: () -&gt; ()) -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Downloads/AirmontPlayer_source/Common/IPTV.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/IPTV.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "509"
@@ -835,14 +835,14 @@
                   offsetFromSymbolStart = "232">
                </Location>
                <Location
-                  uuid = "22234637-ED87-4C0B-A22F-EFF28150BE34 - efbaa153cd9f86e7"
+                  uuid = "22234637-ED87-4C0B-A22F-EFF28150BE34 - f2ff0f0b18609dae"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.IPTV.setChannel(id: Swift.Int, completed: () -&gt; ()) -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Downloads/AirmontPlayer_source/Common/IPTV.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/IPTV.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "510"
@@ -868,14 +868,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8BB0F77C-02FC-474B-8333-FF0EE1C89C30 - c102e3f8ca32726e"
+                  uuid = "8BB0F77C-02FC-474B-8333-FF0EE1C89C30 - dc474da01fcd68a7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "static Airmont_Player.IPTV.setChannel(id: Swift.Int, completed: () -&gt; ()) -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Downloads/AirmontPlayer_source/Common/IPTV.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/IPTV.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "508"
@@ -883,14 +883,14 @@
                   offsetFromSymbolStart = "2544">
                </Location>
                <Location
-                  uuid = "8BB0F77C-02FC-474B-8333-FF0EE1C89C30 - cc82ef899c1c9d9a"
+                  uuid = "8BB0F77C-02FC-474B-8333-FF0EE1C89C30 - d1c741d149e38751"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.IPTV.setChannel(id: Swift.Int, completed: () -&gt; ()) -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Downloads/AirmontPlayer_source/Common/IPTV.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/IPTV.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "509"
@@ -945,6 +945,22 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2183D8F6-8180-41AF-A122-A8C4551C6B21"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airmont Player iOS/ViewControllers/VideoPlayerViewController/VideoPlayerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "checkService()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

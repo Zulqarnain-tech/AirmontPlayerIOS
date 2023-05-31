@@ -13,13 +13,13 @@ class SplashScreenVC: UIViewController {
     @IBOutlet weak var gifImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.callingGif()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 26){ [weak self] in
+        //self.callingGif()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0){ [weak self] in
             self?.setRootViewController()
         }
         
         
-        
+       
         
     }
     

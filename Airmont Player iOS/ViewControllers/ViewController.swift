@@ -48,8 +48,10 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         #if DEBUG
-        self.emailTextFIeld.text = "test1@airmont.tv"
-        self.passwordTextField.text = "Qwerty123"
+        //sebastien.leroy@airmont.com
+        // Azerty123
+        self.emailTextFIeld.text = "sebastien.leroy@airmont.com"//"test1@airmont.tv"
+        self.passwordTextField.text = "Azerty123"//"Qwerty123"
         #endif
         setNeedsStatusBarAppearanceUpdate()
 
@@ -231,7 +233,7 @@ class ViewController: UIViewController{
          if (email != "" && password != "") {
              self.topBGImage.alpha = 0.1
              self.message.text = "Connecting..."
-             User.auth(login: email, password: "Qwerty123", guest: false) {result in
+             User.auth(login: email, password: password, guest: false) {result in
                  switch result {
                  case .success(_):
                      UserDefaults.standard.set(email, forKey: "login_preference")

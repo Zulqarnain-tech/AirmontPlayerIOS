@@ -26,14 +26,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MessageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-wt-dXv">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleSelectChannelImage" translatesAutoresizingMaskIntoConstraints="NO" id="kC3-3f-D70">
-                                <rect key="frame" x="20" y="120" width="353" height="132"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="132" id="mKE-Gn-vRC"/>
-                                </constraints>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.84999999999999998" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pqn-x4-wW2">
-                                <rect key="frame" x="16" y="383.33333333333326" width="361" height="434.66666666666674"/>
+                                <rect key="frame" x="16" y="224.33333333333331" width="361" height="593.66666666666674"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Skt-w7-2Qm">
                                     <size key="itemSize" width="109" height="150"/>
@@ -97,14 +91,14 @@
                                 </connections>
                             </collectionView>
                             <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="988-JC-YSG" customClass="ScrollableSegmentedControl" customModule="ScrollableSegmentedControl">
-                                <rect key="frame" x="0.0" y="317.33333333333331" width="393" height="46"/>
+                                <rect key="frame" x="0.0" y="158.33333333333334" width="393" height="46"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="ZmO-LE-QkP"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN4-Ro-vDr">
-                                <rect key="frame" x="16" y="282" width="82" height="20.333333333333314"/>
+                                <rect key="frame" x="16" y="123" width="82" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -157,24 +151,19 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kN4-Ro-vDr" firstAttribute="top" secondItem="kC3-3f-D70" secondAttribute="bottom" constant="30" id="6Ia-1q-S9a"/>
                             <constraint firstItem="988-JC-YSG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7Nk-VF-AJb"/>
-                            <constraint firstItem="kC3-3f-D70" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="8bW-lL-Ab4"/>
                             <constraint firstItem="vd9-w9-f8m" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="2" id="CJ0-LT-wHO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="988-JC-YSG" secondAttribute="trailing" id="HOp-nG-uo7"/>
                             <constraint firstItem="pqn-x4-wW2" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="OUN-iL-woH"/>
-                            <constraint firstItem="kC3-3f-D70" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="YOW-D6-pfW"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pqn-x4-wW2" secondAttribute="trailing" constant="16" id="YiN-fl-10t"/>
                             <constraint firstAttribute="trailing" secondItem="h1t-wt-dXv" secondAttribute="trailing" id="YvM-MP-Heb"/>
                             <constraint firstItem="kN4-Ro-vDr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Z9b-aC-ujn"/>
-                            <constraint firstItem="kC3-3f-D70" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="120" id="dwZ-o7-YY7"/>
                             <constraint firstItem="h1t-wt-dXv" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="e3Y-oB-RHO"/>
                             <constraint firstItem="pqn-x4-wW2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="eqD-ek-ash"/>
+                            <constraint firstItem="kN4-Ro-vDr" firstAttribute="top" secondItem="vd9-w9-f8m" secondAttribute="bottom" constant="20" id="jBa-6l-6Np"/>
                             <constraint firstAttribute="bottom" secondItem="h1t-wt-dXv" secondAttribute="bottom" id="kBv-Ej-oXg"/>
                             <constraint firstItem="h1t-wt-dXv" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="mgL-yj-9p3"/>
                             <constraint firstItem="pqn-x4-wW2" firstAttribute="top" secondItem="988-JC-YSG" secondAttribute="bottom" constant="20" id="q3E-zI-sD2"/>
-                            <constraint firstItem="kC3-3f-D70" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="rm4-zB-BDk"/>
-                            <constraint firstAttribute="trailing" secondItem="kC3-3f-D70" secondAttribute="trailing" constant="20" id="sZE-kY-Gcp"/>
                             <constraint firstItem="988-JC-YSG" firstAttribute="top" secondItem="kN4-Ro-vDr" secondAttribute="bottom" constant="15" id="ssK-ci-4dH"/>
                             <constraint firstItem="hbt-Xu-qiA" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="vLk-zY-4cc"/>
                             <constraint firstItem="hbt-Xu-qiA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="yTr-za-b3O"/>
@@ -196,7 +185,6 @@
         <image name="MessageBackground" width="1920" height="1080"/>
         <image name="backIcon" width="50" height="50"/>
         <image name="sampleChannelLogo" width="800" height="800"/>
-        <image name="sampleSelectChannelImage" width="321" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

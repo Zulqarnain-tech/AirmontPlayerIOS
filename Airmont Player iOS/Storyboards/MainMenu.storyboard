@@ -121,21 +121,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLX-H9-xNn" customClass="UIControl">
-                                <rect key="frame" x="102.33333333333331" y="269" width="80" height="44"/>
+                                <rect key="frame" x="102.33333333333331" y="269" width="110" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Azerbaijani" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-me-lLI">
-                                        <rect key="frame" x="2.6666666666666714" y="13.666666666666686" width="75" height="17"/>
+                                        <rect key="frame" x="7.6666666666666714" y="13.666666666666686" width="75" height="17"/>
                                         <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI  Text" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdownIcon" translatesAutoresizingMaskIntoConstraints="NO" id="49e-8l-Q6r">
+                                        <rect key="frame" x="90.666666666666671" y="18.666666666666686" width="12" height="7"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="C9s-4X-E5U"/>
-                                    <constraint firstItem="KAc-me-lLI" firstAttribute="centerX" secondItem="tLX-H9-xNn" secondAttribute="centerX" id="DNG-e5-omG"/>
+                                    <constraint firstItem="49e-8l-Q6r" firstAttribute="centerY" secondItem="KAc-me-lLI" secondAttribute="centerY" id="C6B-hY-COI"/>
+                                    <constraint firstAttribute="width" constant="110" id="C9s-4X-E5U"/>
+                                    <constraint firstItem="KAc-me-lLI" firstAttribute="centerX" secondItem="tLX-H9-xNn" secondAttribute="centerX" constant="-10" id="DNG-e5-omG"/>
                                     <constraint firstAttribute="height" constant="44" id="XF2-Mv-hrW"/>
                                     <constraint firstItem="KAc-me-lLI" firstAttribute="centerY" secondItem="tLX-H9-xNn" secondAttribute="centerY" id="dxL-xq-JQt"/>
+                                    <constraint firstItem="49e-8l-Q6r" firstAttribute="leading" secondItem="KAc-me-lLI" secondAttribute="trailing" constant="8" id="ru7-GB-Bru"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -197,6 +202,7 @@
         <image name="ChromeCastIcon" width="1024" height="838"/>
         <image name="MessageBackground" width="1920" height="1080"/>
         <image name="SatelliteIcon" width="820" height="1024"/>
+        <image name="dropdownIcon" width="12" height="7"/>
         <image name="power" catalog="system" width="127" height="128"/>
         <image name="sampleSelectChannelImage" width="321" height="115"/>
         <systemColor name="systemBackgroundColor">

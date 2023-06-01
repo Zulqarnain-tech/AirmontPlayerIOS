@@ -14,6 +14,9 @@ import GCDWebServer
 class VideoPlayerViewController: UIViewController {
     
     // MARK: - Outlets
+    
+    @IBOutlet weak var innerSubMenuViewWidth: NSLayoutConstraint!
+    @IBOutlet weak var innerSubMenuView: UIView!
     @IBOutlet weak var subMenuView: UIView!
     @IBOutlet weak var outerView: UIView!
     @IBOutlet weak var message: UILabel!
@@ -41,7 +44,15 @@ class VideoPlayerViewController: UIViewController {
     // MARK: - View Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //
+        if UIDevice.current.userInterfaceIdiom == .phone{
+            let newConstraint = innerSubMenuViewWidth.constraintWithMultiplier(0.87)
+            view.removeConstraint(innerSubMenuViewWidth)
+            view.addConstraint(newConstraint)
+            view.layoutIfNeeded()
+            innerSubMenuViewWidth = newConstraint
+        }
+        //
         setOutViewGesture()
         setNeedsStatusBarAppearanceUpdate()
 
@@ -321,5 +332,12 @@ extension VideoPlayerViewController: VLCMediaPlayerDelegate {
     func mediaPlayerTimeChanged(_ aNotification: Notification) {
         playerActivity = false
         updateActivityIndicator()
+    }
+}
+
+
+extension NSLayoutConstraint {
+    func constraintWithMultiplier(_ multiplier: CGFloat) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: self.firstItem!, attribute: self.firstAttribute, relatedBy: self.relation, toItem: self.secondItem, attribute: self.secondAttribute, multiplier: multiplier, constant: self.constant)
     }
 }

@@ -302,23 +302,7 @@ extension ViewController{
         let imageData = try? Data(contentsOf: Bundle.main.url(forResource: "airmont", withExtension: "gif")!)
         let advTimeGif = UIImage.gifImageWithData(imageData!)
         self.gifImageView.image = advTimeGif//UIImageView(image: advTimeGif)
-        gifImageView.contentMode = .scaleAspectFit
+        gifImageView.contentMode = .scaleAspectFill
         gifImageView.layer.opacity = 0.5
-//        imageView2.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
-//
-//        view.addSubview(imageView2)
-//        imageView2.layer.zPosition = 999
-//        view.sendSubviewToBack(imageView2)
-        
-        /*
-         let imageView2 = UIImageView(image: advTimeGif)
-         imageView2.contentMode = .scaleAspectFit
-         imageView2.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
-         
-         view.addSubview(imageView2)
-         imageView2.layer.zPosition = 999
-         view.sendSubviewToBack(imageView2)
-         */
-        
     }
 }

@@ -51,13 +51,6 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         setDataSourceForLanguageDropDown()
         emailTextFIeld.delegate = self
-        #if DEBUG
-        callingGif()
-//    self.emailTextFIeld.text = "test1@airmont.tv"
-//    self.passwordTextField.text = "Qwerty123"
-        self.emailTextFIeld.text = "sebastien.leroy@airmont.com"
-        self.passwordTextField.text = "Azerty123"
-        #endif
         if let _ = self.emailTextFIeld.placeholder{
             self.emailTextFIeld.attributedPlaceholder = NSAttributedString(string:self.emailTextFIeld.placeholder!,
                                                                            attributes:[NSAttributedString.Key.foregroundColor: UIColor.darkGray])
@@ -66,20 +59,28 @@ class ViewController: UIViewController{
             self.passwordTextField.attributedPlaceholder = NSAttributedString(string:self.passwordTextField.placeholder!,
                                                                            attributes:[NSAttributedString.Key.foregroundColor: UIColor.darkGray])
           }
+        #if DEBUG
+        callingGif()
+//    self.emailTextFIeld.text = "test1@airmont.tv"
+//    self.passwordTextField.text = "Qwerty123"
+//        self.emailTextFIeld.text = "sebastien.leroy@airmont.com"
+//        self.passwordTextField.text = "Azerty123"
+        #endif
+        
         setNeedsStatusBarAppearanceUpdate()
 
         overrideUserInterfaceStyle = .dark
 
-        URLSession.shared.configuration.timeoutIntervalForRequest = 500
+        //URLSession.shared.configuration.timeoutIntervalForRequest = 500
 
         let username = UserDefaults.standard.string(forKey: "login_preference")
         let password = UserDefaults.standard.string(forKey: "password_preference")
-//        if let savedEmail = UserDefaults.standard.string(forKey: "login_preference"){
-//            self.emailTextFIeld.text = savedEmail
-//        }
-//        if let savedPassword = UserDefaults.standard.string(forKey: "password_preference"){
-//            self.passwordTextField.text = savedPassword
-//        }
+        if let savedEmail = UserDefaults.standard.string(forKey: "login_preference"){
+            self.emailTextFIeld.text = savedEmail
+        }
+        if let savedPassword = UserDefaults.standard.string(forKey: "password_preference"){
+            self.passwordTextField.text = savedPassword
+        }
 
         if ((username == "" || password == "") && !UserDefaults.standard.bool(forKey: "guest_mode_preference")) {
             self.message.text = ""//"Please enter login details in settings app"
@@ -109,10 +110,10 @@ class ViewController: UIViewController{
         return true
     }
     
-    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
-        print("Swiped down")
-        return (User.isLogged())
-    }
+//    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+//        print("Swiped down")
+//        return (User.isLogged())
+//    }
 
     
     // MARK: - Custom Methods
@@ -206,75 +207,61 @@ class ViewController: UIViewController{
     // MARK: - Action Methods
     
     @IBAction func connectViewPressed(_ sender: UIControl) {
-        if (User.isLogged()) {
-            IPTV.initialize() {
-                //TODO: watermark
-                Gateway.notifyConnectedAdmin {
-                }
-                IPTV.connectionState = .connected
-                DispatchQueue.main.async {
-                    let storyboard = UIStoryboard(name: "MainMenu", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
-                    if let window = (UIApplication.shared.windows.first(where: { $0.isKeyWindow })){
-                        window.rootViewController = vc
-                        window.makeKeyAndVisible()
-                    }
-                }
-            }
-            return
-            }
+//        if (User.isLogged()) {
+//            IPTV.initialize() {
+//                //TODO: watermark
+//                Gateway.notifyConnectedAdmin {
+//                }
+//                IPTV.connectionState = .connected
+//                DispatchQueue.main.async {
+//                    let storyboard = UIStoryboard(name: "MainMenu", bundle: nil)
+//                    let vc = storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
+//                    if let window = (UIApplication.shared.windows.first(where: { $0.isKeyWindow })){
+//                        window.rootViewController = vc
+//                        window.makeKeyAndVisible()
+//                    }
+//                }
+//            }
+//            return
+//            }
             
         
     
          guard let email = self.emailTextFIeld.text else {return}
          guard let password = self.passwordTextField.text else {return}
-         
          if (email != "" && password != "") {
              self.topBGImage.alpha = 0.1
              self.message.text = "Connecting..."
              User.auth(login: email, password: password, guest: false) {result in
                  switch result {
                  case .success(_):
-                     let defaults = UserDefaults.standard
+                      let defaults = UserDefaults.standard
+                      
+                      if var savedArray = UserDefaults.standard.stringArray(forKey: "saved_emails_List") {
+                          var savedPasswordsArray = UserDefaults.standard.stringArray(forKey: "saved_passwords_List")
+                          // Modify the array by appending a new element
                      
-                     if var savedArray = UserDefaults.standard.stringArray(forKey: "saved_emails_List") {
-                         var savedPasswordsArray = UserDefaults.standard.stringArray(forKey: "saved_passwords_List")
-                         // Modify the array by appending a new element
-                    
-                         if let index = savedArray.firstIndex(of: email) {
-                             savedArray.remove(at: index)
-                             savedPasswordsArray?.remove(at: index)
-                         }
-                         savedArray.append(email)
-                         savedPasswordsArray?.append(password)
-                         defaults.set(savedArray, forKey: "saved_emails_List")
-                         defaults.set(savedPasswordsArray, forKey: "saved_passwords_List")
-                     }else{ 
-                         var savedEmails: [String] = []
-                         var savedPassword: [String] = []
-                         savedEmails.append(email)
-                         savedPassword.append(password)
-                         defaults.set(savedEmails, forKey: "saved_emails_List")
-                         defaults.set(savedPassword, forKey: "saved_passwords_List")
-                     }
-                     
-                     if let savedArray = defaults.stringArray(forKey: "saved_emails_List") {
-                         // Print all the array elements
-                         for (index, element) in savedArray.enumerated() {
-                             print("\(element) at index : \(index)")
-                         }
-                     }
-                     if let savedArray = defaults.stringArray(forKey: "saved_passwords_List") {
-                        
-                         for (index, element) in savedArray.enumerated() {
-                             print("\(element) at index : \(index)")
-                         }
-                     }
-                     
-                     
-                     UserDefaults.standard.set(email, forKey: "login_preference")
-                     UserDefaults.standard.set(password, forKey: "password_preference")
-                     defaults.synchronize()
+                          if let index = savedArray.firstIndex(of: email) {
+                              savedArray.remove(at: index)
+                              savedPasswordsArray?.remove(at: index)
+                          }
+                          savedArray.append(email)
+                          savedPasswordsArray?.append(password)
+                          defaults.set(savedArray, forKey: "saved_emails_List")
+                          defaults.set(savedPasswordsArray, forKey: "saved_passwords_List")
+                      }else{
+                          var savedEmails: [String] = []
+                          var savedPassword: [String] = []
+                          savedEmails.append(email)
+                          savedPassword.append(password)
+                          defaults.set(savedEmails, forKey: "saved_emails_List")
+                          defaults.set(savedPassword, forKey: "saved_passwords_List")
+                      }
+                      
+                      
+                      UserDefaults.standard.set(email, forKey: "login_preference")
+                      UserDefaults.standard.set(password, forKey: "password_preference")
+                      defaults.synchronize()
                      IPTV.initialize() {
                          //TODO: watermark
                          Gateway.notifyConnectedAdmin {

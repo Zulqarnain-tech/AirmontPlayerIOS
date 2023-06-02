@@ -83,7 +83,8 @@ class MainMenuViewController: UIViewController {
     @IBAction func powerButtonPressed(_ sender: UIButton) {
         debugPrint("powerButtonPressed")
         User.accessToken = nil
-        UserDefaults.standard.set(nil, forKey: "accessToken")
+        User.resetUserData()
+        //UserDefaults.standard.set("", forKey: "accessToken")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
         if let window = (UIApplication.shared.windows.first(where: { $0.isKeyWindow })){

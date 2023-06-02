@@ -26,7 +26,11 @@ class User {
     }
     
     static func auth(login: String, password: String, guest: Bool, completed: @escaping (Result<String, APError>)->()) {
-        print("User.auth()")
+        print("User.auth() ")
+        debugPrint("Email: \(login)")
+        debugPrint("Password: \(password)")
+        debugPrint("url: \(API.getApiURL())/iptv/login")
+        //http://195.25.222.131:8888/api/iptv/login
         let params = ["login": login,
                       "password": password,
                       "guest": guest] as Dictionary<String, AnyObject>

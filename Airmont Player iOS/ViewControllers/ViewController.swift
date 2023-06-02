@@ -1,6 +1,6 @@
 import UIKit
 import Foundation
-import GCDWebServer
+//import GCDWebServer
 
 import Alamofire
 import AlamofireImage
@@ -31,7 +31,7 @@ class ViewController: UIViewController{
     
     
     // MARK: - Custom Properties
-    var webServer: GCDWebServer!
+    //var webServer: GCDWebServer!
     var currentlyPlaying: String = "null";
     var shouldStream: Bool = false;
     var watchdogCounter: Int = 0;
@@ -61,8 +61,8 @@ class ViewController: UIViewController{
 
         URLSession.shared.configuration.timeoutIntervalForRequest = 500
 
-        let username = UserDefaults.standard.string(forKey: "login_preference") ?? ""
-        let password = UserDefaults.standard.string(forKey: "password_preference") ?? ""
+        let username = UserDefaults.standard.string(forKey: "login_preference")
+        let password = UserDefaults.standard.string(forKey: "password_preference")
         
 
         if ((username == "" || password == "") && !UserDefaults.standard.bool(forKey: "guest_mode_preference")) {
@@ -74,21 +74,24 @@ class ViewController: UIViewController{
         super.viewWillAppear(animated)
 
         print("VIEW APPEAR")
-            GCDWebServer.setLogLevel(4)
-            webServer = GCDWebServer()
-            webServer.addDefaultHandler(forMethod: "POST", request: GCDWebServerURLEncodedFormRequest.self, processBlock: {
-                request in
-                //Check for update
-                Gateway.checkUpdate(vc: self) {
-                }
-                Gateway.address = String(request.remoteAddressString[..<request.remoteAddressString.lastIndex(of: ":")!])
+            
+        /*
+         GCDWebServer.setLogLevel(4)
+         webServer = GCDWebServer()
+         webServer.addDefaultHandler(forMethod: "POST", request: GCDWebServerURLEncodedFormRequest.self, processBlock: {
+             request in
+             //Check for update
+             Gateway.checkUpdate(vc: self) {
+             }
+             Gateway.address = String(request.remoteAddressString[..<request.remoteAddressString.lastIndex(of: ":")!])
 
-                self.watchdogCounter = 0;
-                return GCDWebServerDataResponse(html:"200 OK ")
-        })
-        try? webServer.start(options: [GCDWebServerOption_Port : 8095,
-                                       GCDWebServerOption_BonjourName : "Airmont Player iOS",
-                                       GCDWebServerOption_BonjourType : "_airmontplayer._tcp"])
+             self.watchdogCounter = 0;
+             return GCDWebServerDataResponse(html:"200 OK ")
+     })
+     try? webServer.start(options: [GCDWebServerOption_Port : 8095,
+                                    GCDWebServerOption_BonjourName : "Airmont Player iOS",
+                                    GCDWebServerOption_BonjourType : "_airmontplayer._tcp"])
+         */
         UIApplication.shared.isIdleTimerDisabled = true
     }
 
@@ -96,10 +99,12 @@ class ViewController: UIViewController{
         super.viewDidDisappear(animated)
 
         print("VIEW DISAPPEAR")
-        if (webServer != nil) {
-            webServer.stop()
-        }
-        webServer = nil
+        /*
+         if (webServer != nil) {
+             webServer.stop()
+         }
+         webServer = nil
+         */
     }
     
     

@@ -73,7 +73,7 @@ class VideoPlayerViewController: UIViewController {
 
         UIApplication.shared.isIdleTimerDisabled = true
         mediaPlayer = VLCMediaPlayer(options: ["--ipv4-timeout=2000"])
-        mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:("16:9" as NSString).utf8String)
+        mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:("4:3" as NSString).utf8String)
         mediaPlayer.libraryInstance.debugLogging = false;
         mediaPlayer.delegate = self
         mediaPlayer.drawable = movieView
@@ -84,7 +84,6 @@ class VideoPlayerViewController: UIViewController {
             self.message.text = ""
             self.checkService()
         }
-
         NotificationCenter.default.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: nil) { (notification) in
             self.mediaPlayer.stop()
             self.mediaPlayer.media = nil

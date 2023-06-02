@@ -5,6 +5,7 @@ import Foundation
 import Alamofire
 import AlamofireImage
 import Network
+import DropDown
 
 class ViewController: UIViewController{
     
@@ -31,7 +32,7 @@ class ViewController: UIViewController{
     
     
     // MARK: - Custom Properties
-    //var webServer: GCDWebServer!
+    private var emailListDropDown:DropDown = DropDown()
     var currentlyPlaying: String = "null";
     var shouldStream: Bool = false;
     var watchdogCounter: Int = 0;
@@ -48,12 +49,14 @@ class ViewController: UIViewController{
     // MARK: - View Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        setDataSourceForLanguageDropDown()
+        emailTextFIeld.delegate = self
         #if DEBUG
-        //sebastien.leroy@airmont.com
-        // Azerty123
         callingGif()
-//    self.emailTextFIeld.text = "sebastien.leroy@airmont.com"//"test1@airmont.tv"
-//    self.passwordTextField.text = "Azerty123"//"Qwerty123"
+//    self.emailTextFIeld.text = "test1@airmont.tv"
+//    self.passwordTextField.text = "Qwerty123"
+        self.emailTextFIeld.text = "sebastien.leroy@airmont.com"
+        self.passwordTextField.text = "Azerty123"
         #endif
         if let _ = self.emailTextFIeld.placeholder{
             self.emailTextFIeld.attributedPlaceholder = NSAttributedString(string:self.emailTextFIeld.placeholder!,
@@ -71,12 +74,12 @@ class ViewController: UIViewController{
 
         let username = UserDefaults.standard.string(forKey: "login_preference")
         let password = UserDefaults.standard.string(forKey: "password_preference")
-        if let savedEmail = UserDefaults.standard.string(forKey: "login_preference"){
-            self.emailTextFIeld.text = savedEmail
-        }
-        if let savedPassword = UserDefaults.standard.string(forKey: "password_preference"){
-            self.passwordTextField.text = savedPassword
-        }
+//        if let savedEmail = UserDefaults.standard.string(forKey: "login_preference"){
+//            self.emailTextFIeld.text = savedEmail
+//        }
+//        if let savedPassword = UserDefaults.standard.string(forKey: "password_preference"){
+//            self.passwordTextField.text = savedPassword
+//        }
 
         if ((username == "" || password == "") && !UserDefaults.standard.bool(forKey: "guest_mode_preference")) {
             self.message.text = ""//"Please enter login details in settings app"
@@ -87,24 +90,6 @@ class ViewController: UIViewController{
         super.viewWillAppear(animated)
 
         print("VIEW APPEAR")
-            
-        /*
-         GCDWebServer.setLogLevel(4)
-         webServer = GCDWebServer()
-         webServer.addDefaultHandler(forMethod: "POST", request: GCDWebServerURLEncodedFormRequest.self, processBlock: {
-             request in
-             //Check for update
-             Gateway.checkUpdate(vc: self) {
-             }
-             Gateway.address = String(request.remoteAddressString[..<request.remoteAddressString.lastIndex(of: ":")!])
-
-             self.watchdogCounter = 0;
-             return GCDWebServerDataResponse(html:"200 OK ")
-     })
-     try? webServer.start(options: [GCDWebServerOption_Port : 8095,
-                                    GCDWebServerOption_BonjourName : "Airmont Player iOS",
-                                    GCDWebServerOption_BonjourType : "_airmontplayer._tcp"])
-         */
         UIApplication.shared.isIdleTimerDisabled = true
     }
 
@@ -112,12 +97,6 @@ class ViewController: UIViewController{
         super.viewDidDisappear(animated)
 
         print("VIEW DISAPPEAR")
-        /*
-         if (webServer != nil) {
-             webServer.stop()
-         }
-         webServer = nil
-         */
     }
     
     
@@ -256,8 +235,46 @@ class ViewController: UIViewController{
              User.auth(login: email, password: password, guest: false) {result in
                  switch result {
                  case .success(_):
+                     let defaults = UserDefaults.standard
+                     
+                     if var savedArray = UserDefaults.standard.stringArray(forKey: "saved_emails_List") {
+                         var savedPasswordsArray = UserDefaults.standard.stringArray(forKey: "saved_passwords_List")
+                         // Modify the array by appending a new element
+                    
+                         if let index = savedArray.firstIndex(of: email) {
+                             savedArray.remove(at: index)
+                             savedPasswordsArray?.remove(at: index)
+                         }
+                         savedArray.append(email)
+                         savedPasswordsArray?.append(password)
+                         defaults.set(savedArray, forKey: "saved_emails_List")
+                         defaults.set(savedPasswordsArray, forKey: "saved_passwords_List")
+                     }else{ 
+                         var savedEmails: [String] = []
+                         var savedPassword: [String] = []
+                         savedEmails.append(email)
+                         savedPassword.append(password)
+                         defaults.set(savedEmails, forKey: "saved_emails_List")
+                         defaults.set(savedPassword, forKey: "saved_passwords_List")
+                     }
+                     
+                     if let savedArray = defaults.stringArray(forKey: "saved_emails_List") {
+                         // Print all the array elements
+                         for (index, element) in savedArray.enumerated() {
+                             print("\(element) at index : \(index)")
+                         }
+                     }
+                     if let savedArray = defaults.stringArray(forKey: "saved_passwords_List") {
+                        
+                         for (index, element) in savedArray.enumerated() {
+                             print("\(element) at index : \(index)")
+                         }
+                     }
+                     
+                     
                      UserDefaults.standard.set(email, forKey: "login_preference")
                      UserDefaults.standard.set(password, forKey: "password_preference")
+                     defaults.synchronize()
                      IPTV.initialize() {
                          //TODO: watermark
                          Gateway.notifyConnectedAdmin {
@@ -312,7 +329,7 @@ class ViewController: UIViewController{
     }
     
     
-    
+        
 }
 
 extension ViewController{
@@ -323,4 +340,61 @@ extension ViewController{
         gifImageView.contentMode = .scaleAspectFill
         gifImageView.layer.opacity = 0.5
     }
+}
+
+extension ViewController: UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        if textField == self.emailTextFIeld{
+            displaySavedEmailsList()
+        }
+    }
+    
+    func displaySavedEmailsList(){
+        debugPrint("displaySavedEmailsList")
+        DropDown.appearance().setupCornerRadius(5)
+        emailListDropDown.anchorView = self.emailTextFIeld
+        emailListDropDown.direction = .bottom
+        if let avenierMediumFont = UIFont(name: "Avenir-Medium",size: 12){
+            emailListDropDown.textFont = avenierMediumFont
+        }
+        emailListDropDown.backgroundColor = .white
+        emailListDropDown.separatorColor = .lightGray
+        emailListDropDown.selectedTextColor = .white
+        
+        emailListDropDown.selectionBackgroundColor = .black.withAlphaComponent(0.5)
+        
+        emailListDropDown.bottomOffset = CGPoint(x: 0, y:(self.emailTextFIeld.frame.size.height - 3))
+        emailListDropDown.topOffset = CGPoint(x: 0, y:-(self.emailTextFIeld.bounds.height) )
+        emailListDropDown.selectionAction = { [weak self] (index: Int, item: String) in
+            guard let strongSelf = self else {return}
+            
+            
+            strongSelf.emailTextFIeld.text = item
+            if let emailsArray = UserDefaults.standard.stringArray(forKey: "saved_emails_List"){
+                if let indexEmail = emailsArray.firstIndex(of: item) {
+                    let passwordsArray = UserDefaults.standard.stringArray(forKey: "saved_passwords_List")
+                    if let password = passwordsArray?[indexEmail]{
+                        self?.passwordTextField.text = password
+                        debugPrint("Selected password \(password)")
+                    }
+                    
+                    
+                }
+                
+                /// Call function upon selecting an item here
+            }
+            
+            /// Call function upon selecting an item here
+        }
+        emailListDropDown.width = self.emailTextFIeld.frame.width
+        emailListDropDown.show()
+    }
+    func setDataSourceForLanguageDropDown(){
+        if let savedArray = UserDefaults.standard.stringArray(forKey: "saved_emails_List") {
+            self.emailListDropDown.dataSource = savedArray
+        }
+        
+    }
+
 }

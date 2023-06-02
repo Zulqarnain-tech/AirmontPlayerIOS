@@ -287,6 +287,7 @@ class ViewController: UIViewController {
             if (current_resolution?.name == "Stream Off") {
                 self.imageView.image = UIImage(named: "MessageBackground")
                 self.message.text = "Stream Off profile detected\nPlease, select another one to watch video"
+
                 self.shouldStream = false
                 self.mediaPlayer.stop()
                 self.mediaPlayer.media = nil

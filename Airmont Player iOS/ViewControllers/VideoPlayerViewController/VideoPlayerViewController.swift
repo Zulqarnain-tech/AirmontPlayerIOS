@@ -49,8 +49,8 @@ class VideoPlayerViewController: UIViewController {
         super.viewDidLoad()
         //
         if UIDevice.current.userInterfaceIdiom == .phone{
-//            subMenuYaxisConstraint.constant = 55
-//            movieViewBottomConstraint.constant = 150
+            subMenuYaxisConstraint.constant = 55
+            //movieViewBottomConstraint.constant = 150
             let newConstraint = innerSubMenuViewWidth.constraintWithMultiplier(0.87)
             view.removeConstraint(innerSubMenuViewWidth)
             view.addConstraint(newConstraint)
@@ -77,7 +77,8 @@ class VideoPlayerViewController: UIViewController {
         
         mediaPlayer = VLCMediaPlayer(options: ["--ipv4-timeout=2000"])
         //
-        mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:("3:4" as NSString).utf8String)
+        let orientation = UIDevice.current.orientation
+        mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:(orientation.isPortrait == true ? "3:4" : "4:3" as NSString).utf8String)
         mediaPlayer.libraryInstance.debugLogging = false;
         mediaPlayer.delegate = self
         mediaPlayer.drawable = movieView

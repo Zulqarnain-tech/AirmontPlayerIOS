@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -18,11 +18,11 @@
             <objects>
                 <viewController storyboardIdentifier="VideoPlayerViewController" id="Y6W-OH-hqX" customClass="VideoPlayerViewController" customModule="Airmont_Player" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="mbr-BR-bmh">
-                                <rect key="frame" x="315" y="63" width="693" height="45"/>
+                                <rect key="frame" x="123" y="63" width="291" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="yNC-O7-ixq"/>
                                 </constraints>
@@ -31,10 +31,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view alpha="0.34999999999999998" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-i8-yEI" customClass="UIControl">
-                                <rect key="frame" x="-50" y="0.0" width="1124" height="1366"/>
+                                <rect key="frame" x="-50" y="0.0" width="530" height="932"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="40K-uj-Uyq">
-                                        <rect key="frame" x="542" y="663" width="40" height="40"/>
+                                        <rect key="frame" x="245" y="446" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="8kf-zD-tYK"/>
                                             <constraint firstAttribute="height" constant="40" id="tPe-GR-Ftb"/>
@@ -52,14 +52,14 @@
                                 <rect key="frame" x="16" y="10" width="86" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hy6-cD-4uv">
-                                        <rect key="frame" x="37" y="11.5" width="37" height="19.5"/>
+                                        <rect key="frame" x="37" y="11.333333333333334" width="37" height="19.333333333333329"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wEg-AM-OLh">
-                                        <rect key="frame" x="6" y="6.5" width="26" height="29"/>
+                                        <rect key="frame" x="6" y="6.6666666666666679" width="26" height="29.000000000000004"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="JCM-8d-keM"/>
@@ -86,19 +86,19 @@
                                 </connections>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x89-fb-tPF">
-                                <rect key="frame" x="179" y="1" width="666" height="60"/>
+                                <rect key="frame" x="75.333333333333343" y="1" width="279.33333333333326" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpw-M1-sA0">
-                                        <rect key="frame" x="0.0" y="5" width="666" height="50"/>
+                                        <rect key="frame" x="0.0" y="5" width="279.33333333333331" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vLV-dD-Jld">
-                                                <rect key="frame" x="0.0" y="0.0" width="666" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="279.33333333333331" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4k-8j-huf" userLabel="setting" customClass="UIControl">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gearshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zgr-9u-xyI">
-                                                                <rect key="frame" x="4" y="0.0" width="32" height="31.5"/>
+                                                                <rect key="frame" x="4" y="0.33333333333333215" width="32" height="31.333333333333339"/>
                                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="32" id="kIb-28-Qyk"/>
@@ -131,10 +131,10 @@
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqN-91-3oU" userLabel="fav" customClass="UIControl">
-                                                        <rect key="frame" x="208.5" y="0.0" width="40" height="50"/>
+                                                        <rect key="frame" x="79.666666666666686" y="0.0" width="40" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BHZ-Kj-m86">
-                                                                <rect key="frame" x="4" y="-0.5" width="32" height="32"/>
+                                                                <rect key="frame" x="4" y="-0.33333333333333215" width="32" height="31.666666666666664"/>
                                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="32" id="aUb-gN-4Wo"/>
@@ -166,10 +166,10 @@
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyE-EL-Hbd" userLabel="more" customClass="UIControl">
-                                                        <rect key="frame" x="417.5" y="0.0" width="40" height="50"/>
+                                                        <rect key="frame" x="159.66666666666669" y="0.0" width="40" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WD7-WV-qqU">
-                                                                <rect key="frame" x="4" y="2" width="32" height="28"/>
+                                                                <rect key="frame" x="4" y="2.3333333333333304" width="32" height="27.666666666666668"/>
                                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="32" id="4Yg-bB-0rd"/>
@@ -201,10 +201,10 @@
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYD-E6-IbY" userLabel="search" customClass="UIControl">
-                                                        <rect key="frame" x="626" y="0.0" width="40" height="50"/>
+                                                        <rect key="frame" x="239.33333333333337" y="0.0" width="40" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f0s-16-F4P">
-                                                                <rect key="frame" x="4" y="0.5" width="32" height="30.5"/>
+                                                                <rect key="frame" x="4" y="0.99999999999999645" width="32" height="30.333333333333329"/>
                                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="32" id="1ps-cd-dlq"/>
@@ -263,7 +263,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWQ-j0-P71" userLabel="OuterViewView">
-                                <rect key="frame" x="16" y="110" width="992" height="1256"/>
+                                <rect key="frame" x="16" y="110" width="398" height="822"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>

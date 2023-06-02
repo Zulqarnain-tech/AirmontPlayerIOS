@@ -360,7 +360,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "287D0E56-7F7C-4BE8-820A-4B82E9FE7AF2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Common/IPTV.swift"
@@ -536,7 +536,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A1F28AC5-6502-4C46-BFFA-456BEC9D9AEF"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Common/IPTV.swift"
@@ -584,7 +584,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CE150C5F-FEA4-42D5-B0D3-79B7B18ABDCC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Common/IPTV.swift"
@@ -814,8 +814,8 @@
             filePath = "Airmont Player iOS/ViewControllers/VideoPlayerViewController/VideoPlayerViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "271"
-            endingLineNumber = "271"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
             landmarkName = "checkService()"
             landmarkType = "7">
          </BreakpointContent>
@@ -862,138 +862,10 @@
             filePath = "Airmont Player iOS/ViewControllers/VideoPlayerViewController/VideoPlayerViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "viewWillTransition(to:with:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "27404C6B-43C9-4C8D-AA15-8B92BAE5CD52"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Common/User.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "auth(login:password:guest:completed:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B79D1A22-03AB-4AD2-BC03-64BD8CC89CD9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Airmont Player iOS/ViewControllers/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
-            landmarkName = "connectViewPressed(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B79D1A22-03AB-4AD2-BC03-64BD8CC89CD9 - 52e4c4f1a73674e0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Airmont_Player.ViewController.connectViewPressed(__C.UIControl) -&gt; ()"
-                  moduleName = "Airmont Player"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Airmont%20Player%20iOS/ViewControllers/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "235"
-                  endingLineNumber = "235"
-                  offsetFromSymbolStart = "1492">
-               </Location>
-               <Location
-                  uuid = "B79D1A22-03AB-4AD2-BC03-64BD8CC89CD9 - 1aa451a962cec84f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, Airmont_Player.APError&gt;) -&gt; () in Airmont_Player.ViewController.connectViewPressed(__C.UIControl) -&gt; ()"
-                  moduleName = "Airmont Player"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Airmont%20Player%20iOS/ViewControllers/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "237"
-                  endingLineNumber = "237"
-                  offsetFromSymbolStart = "400">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FB92B2DE-F468-4738-8836-1F0A034D95B3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Airmont Player iOS/ViewControllers/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
-            landmarkName = "connectViewPressed(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "51BE985D-D6E6-4D32-9379-A5504E939661"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Airmont Player iOS/ViewControllers/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "51BE985D-D6E6-4D32-9379-A5504E939661 - e87af2356bf3a4f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Airmont_Player.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Airmont Player"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Airmont%20Player%20iOS/ViewControllers/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "3404">
-               </Location>
-               <Location
-                  uuid = "51BE985D-D6E6-4D32-9379-A5504E939661 - e87af2356bf3a4f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Airmont_Player.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Airmont Player"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Airmont%20Player%20iOS/ViewControllers/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "3572">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1063,22 +935,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EDC70D18-AF4C-4B9C-9210-3C734B46505E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Airmont Player iOS/ViewControllers/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
-            landmarkName = "connectViewPressed(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7BF6CA4E-E591-4687-AD98-44E0D3D38AB0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -1095,17 +951,191 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "485B2A26-062F-464E-A842-92B988D487E8"
+            uuid = "EF596B62-FC16-470C-93C7-DA2F71DF90CE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Common/API.swift"
+            filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "getApiURL()"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "auth(login:password:guest:completed:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A184156E-22B0-4C7B-9276-BBEC7C6339C2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "auth(login:password:guest:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4A1DB0B-F66E-43D6-ADB0-8D325CC6E2C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "auth(login:password:guest:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F85918DE-7396-466D-A9D4-C1DC92915D91"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "auth(login:password:guest:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0CB34F3-B155-49F6-B8E7-54AFBDAA5D21"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "disconnect(completed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B0CB34F3-B155-49F6-B8E7-54AFBDAA5D21 - 8fccd328f6bee5b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Airmont_Player.User.disconnect(completed: () -&gt; ()) -&gt; ()"
+                  moduleName = "Airmont Player"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "1628">
+               </Location>
+               <Location
+                  uuid = "B0CB34F3-B155-49F6-B8E7-54AFBDAA5D21 - 468edbe173e479f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.User.disconnect(completed: () -&gt; ()) -&gt; ()"
+                  moduleName = "Airmont Player"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1AA3AEF-A5E4-4DFE-98AD-0A936DA3529F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "disconnect(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DE50FE1-EE3B-40A6-98BA-1E104ADA0471"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7C2A081-FCEB-46FF-A900-59BA1A7B2F65"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "disconnect(completed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B7C2A081-FCEB-46FF-A900-59BA1A7B2F65 - 468edbe173e479b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.User.disconnect(completed: () -&gt; ()) -&gt; ()"
+                  moduleName = "Airmont Player"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "B7C2A081-FCEB-46FF-A900-59BA1A7B2F65 - 468edbe173e479b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.User.disconnect(completed: () -&gt; ()) -&gt; ()"
+                  moduleName = "Airmont Player"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "588">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

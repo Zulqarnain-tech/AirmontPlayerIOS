@@ -15,6 +15,10 @@ class VideoPlayerViewController: UIViewController {
     
     // MARK: - Outlets
     
+    
+    @IBOutlet weak var subMenuYaxisConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var movieViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var innerSubMenuViewWidth: NSLayoutConstraint!
     @IBOutlet weak var innerSubMenuView: UIView!
     @IBOutlet weak var subMenuView: UIView!
@@ -46,6 +50,8 @@ class VideoPlayerViewController: UIViewController {
         super.viewDidLoad()
         //
         if UIDevice.current.userInterfaceIdiom == .phone{
+            subMenuYaxisConstraint.constant = 55
+            movieViewBottomConstraint.constant = 150
             let newConstraint = innerSubMenuViewWidth.constraintWithMultiplier(0.87)
             view.removeConstraint(innerSubMenuViewWidth)
             view.addConstraint(newConstraint)

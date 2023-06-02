@@ -52,9 +52,17 @@ class ViewController: UIViewController{
         //sebastien.leroy@airmont.com
         // Azerty123
         callingGif()
-    self.emailTextFIeld.text = "sebastien.leroy@airmont.com"//"test1@airmont.tv"
-    self.passwordTextField.text = "Azerty123"//"Qwerty123"
+//    self.emailTextFIeld.text = "sebastien.leroy@airmont.com"//"test1@airmont.tv"
+//    self.passwordTextField.text = "Azerty123"//"Qwerty123"
         #endif
+        if let _ = self.emailTextFIeld.placeholder{
+            self.emailTextFIeld.attributedPlaceholder = NSAttributedString(string:self.emailTextFIeld.placeholder!,
+                                                                           attributes:[NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+          }
+        if let _ = self.passwordTextField.placeholder{
+            self.passwordTextField.attributedPlaceholder = NSAttributedString(string:self.passwordTextField.placeholder!,
+                                                                           attributes:[NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+          }
         setNeedsStatusBarAppearanceUpdate()
 
         overrideUserInterfaceStyle = .dark
@@ -63,7 +71,12 @@ class ViewController: UIViewController{
 
         let username = UserDefaults.standard.string(forKey: "login_preference")
         let password = UserDefaults.standard.string(forKey: "password_preference")
-        
+        if let savedEmail = UserDefaults.standard.string(forKey: "login_preference"){
+            self.emailTextFIeld.text = savedEmail
+        }
+        if let savedPassword = UserDefaults.standard.string(forKey: "password_preference"){
+            self.passwordTextField.text = savedPassword
+        }
 
         if ((username == "" || password == "") && !UserDefaults.standard.bool(forKey: "guest_mode_preference")) {
             self.message.text = ""//"Please enter login details in settings app"

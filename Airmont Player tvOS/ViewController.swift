@@ -207,17 +207,22 @@ class ViewController: UIViewController {
         mediaPlayer.delegate = self
         mediaPlayer.drawable = movieView
 
-        NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: nil) { (notification) in
-            self.currentlyPlaying = "null"
-            self.imageView.image = UIImage(named: "MessageBackground")
-            self.message.text = ""
-            self.checkService()
-        }
+        
+        /// 
+        /*
+         NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: nil) { (notification) in
+             self.currentlyPlaying = "null"
+             self.imageView.image = UIImage(named: "MessageBackground")
+             self.message.text = ""
+             self.checkService()
+         }
 
-        NotificationCenter.default.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: nil) { (notification) in
-            self.mediaPlayer.stop()
-            self.mediaPlayer.media = nil
-        }
+         NotificationCenter.default.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: nil) { (notification) in
+             self.mediaPlayer.stop()
+             self.mediaPlayer.media = nil
+         }
+         */
+        
 
         if ((username == "" || password == "") && !UserDefaults.standard.bool(forKey: "guest_mode_preference")) {
             self.message.text = "Please enter login details in settings app"

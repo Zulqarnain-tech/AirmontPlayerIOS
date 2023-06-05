@@ -83,14 +83,22 @@ class MainMenuViewController: UIViewController {
     @IBAction func powerButtonPressed(_ sender: UIButton) {
         debugPrint("powerButtonPressed")
         User.accessToken = nil
-        User.resetUserData()
-        //UserDefaults.standard.set("", forKey: "accessToken")
+       
+        //User.resetUserData()
+        URLSession.shared.invalidateAndCancel()
+        URLSession.shared.reset(completionHandler: {
+            //
+            debugPrint("The shared session has been reset")
+        })
+        //
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
         if let window = (UIApplication.shared.windows.first(where: { $0.isKeyWindow })){
             window.rootViewController = vc
             window.makeKeyAndVisible()
         }
+        
+        
 
     }
     

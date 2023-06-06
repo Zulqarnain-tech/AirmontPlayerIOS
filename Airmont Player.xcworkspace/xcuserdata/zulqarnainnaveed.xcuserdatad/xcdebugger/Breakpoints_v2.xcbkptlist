@@ -814,8 +814,8 @@
             filePath = "Airmont Player iOS/ViewControllers/VideoPlayerViewController/VideoPlayerViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
             landmarkName = "checkService()"
             landmarkType = "7">
          </BreakpointContent>
@@ -862,8 +862,8 @@
             filePath = "Airmont Player iOS/ViewControllers/VideoPlayerViewController/VideoPlayerViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "viewWillTransition(to:with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -878,8 +878,8 @@
             filePath = "Airmont Player iOS/ViewControllers/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
             landmarkName = "connectViewPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -894,13 +894,13 @@
             filePath = "Airmont Player iOS/ViewControllers/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "connectViewPressed(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "1F375F0A-4632-4258-9D99-B74F5AB65A8D - 52e4c4f1a736730d"
+                  uuid = "1F375F0A-4632-4258-9D99-B74F5AB65A8D - 52e4c4f1a7367691"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -910,12 +910,12 @@
                   urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Airmont%20Player%20iOS/ViewControllers/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "230"
-                  endingLineNumber = "230"
+                  startingLineNumber = "250"
+                  endingLineNumber = "250"
                   offsetFromSymbolStart = "104">
                </Location>
                <Location
-                  uuid = "1F375F0A-4632-4258-9D99-B74F5AB65A8D - 52e4c4f1a736730d"
+                  uuid = "1F375F0A-4632-4258-9D99-B74F5AB65A8D - 52e4c4f1a7367691"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -925,8 +925,8 @@
                   urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Airmont%20Player%20iOS/ViewControllers/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "230"
-                  endingLineNumber = "230"
+                  startingLineNumber = "250"
+                  endingLineNumber = "250"
                   offsetFromSymbolStart = "300">
                </Location>
             </Locations>
@@ -942,8 +942,8 @@
             filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "auth(login:password:guest:completed:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -958,8 +958,8 @@
             filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "auth(login:password:guest:completed:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -974,8 +974,8 @@
             filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "auth(login:password:guest:completed:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -990,8 +990,8 @@
             filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "auth(login:password:guest:completed:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1006,8 +1006,8 @@
             filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "auth(login:password:guest:completed:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1022,42 +1022,10 @@
             filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "disconnect(completed:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B0CB34F3-B155-49F6-B8E7-54AFBDAA5D21 - 8fccd328f6bee5b2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Airmont_Player.User.disconnect(completed: () -&gt; ()) -&gt; ()"
-                  moduleName = "Airmont Player"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/User.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "1628">
-               </Location>
-               <Location
-                  uuid = "B0CB34F3-B155-49F6-B8E7-54AFBDAA5D21 - 468edbe173e479f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.User.disconnect(completed: () -&gt; ()) -&gt; ()"
-                  moduleName = "Airmont Player"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/User.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "364">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1070,8 +1038,8 @@
             filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "disconnect(completed:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1100,42 +1068,106 @@
             filePath = "Common/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "disconnect(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27CA80DD-0E90-45BC-BB34-0B5B320B3515"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airmont Player iOS/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "checkIfLoggedIn()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "B7C2A081-FCEB-46FF-A900-59BA1A7B2F65 - 468edbe173e479b1"
+                  uuid = "27CA80DD-0E90-45BC-BB34-0B5B320B3515 - e9192890b228bf55"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.User.disconnect(completed: () -&gt; ()) -&gt; ()"
+                  symbolName = "Airmont_Player.ViewController.checkIfLoggedIn() -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/User.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Airmont%20Player%20iOS/ViewControllers/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "420">
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "52">
                </Location>
                <Location
-                  uuid = "B7C2A081-FCEB-46FF-A900-59BA1A7B2F65 - 468edbe173e479b1"
+                  uuid = "27CA80DD-0E90-45BC-BB34-0B5B320B3515 - ecfd34f131a4236b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Airmont_Player.User.disconnect(completed: () -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 () -&gt; () in Airmont_Player.ViewController.checkIfLoggedIn() -&gt; ()"
                   moduleName = "Airmont Player"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Common/User.swift"
+                  urlString = "file:///Users/zulqarnainnaveed/Documents/Deliver/AirmontPlayer_source/Airmont%20Player%20iOS/ViewControllers/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "588">
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "136">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "783B241D-6754-4723-A0A4-FE6FC53D4EE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "isLogged()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "006C43A4-B44F-4BFD-AC70-36D2E88C0C11"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airmont Player iOS/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "checkIfLoggedIn()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACCCE50A-5B8F-47F3-AF0B-E2267E1713BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "isLogged()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

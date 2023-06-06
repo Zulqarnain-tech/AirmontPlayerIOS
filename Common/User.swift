@@ -11,7 +11,8 @@ import Foundation
 class User {
     static var isDisconnecting:Bool = false
 
-    static var accessToken:String? = nil
+    static var accessToken = UserDefaults.standard.string(forKey: "accessToken")
+    //static var accessToken:String? = nil
 
     static func isLogged() -> Bool {
         if (accessToken == nil) {

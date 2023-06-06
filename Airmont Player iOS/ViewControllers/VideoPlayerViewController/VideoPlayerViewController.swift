@@ -15,7 +15,6 @@ class VideoPlayerViewController: UIViewController {
     
     // MARK: - Outlets
     
-    
     @IBOutlet weak var subMenuYaxisConstraint: NSLayoutConstraint!
     @IBOutlet weak var movieViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var innerSubMenuViewWidth: NSLayoutConstraint!
@@ -29,7 +28,6 @@ class VideoPlayerViewController: UIViewController {
     
     
     // MARK: - Custom Properties
-    let videoPlayer = VLCMediaPlayer()
     var webServer: GCDWebServer!
     private var mediaPlayer: VLCMediaPlayer!
     var currentlyPlaying: String = "null";
@@ -82,17 +80,9 @@ class VideoPlayerViewController: UIViewController {
         mediaPlayer.libraryInstance.debugLogging = false;
         mediaPlayer.delegate = self
         mediaPlayer.drawable = movieView
-
-        NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: nil) { (notification) in
             self.currentlyPlaying = "null"
-            //self.imageView.image = UIImage(named: "MessageBackground")
             self.message.text = ""
             self.checkService()
-        }
-        NotificationCenter.default.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: nil) { (notification) in
-            self.mediaPlayer.stop()
-            self.mediaPlayer.media = nil
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -152,13 +142,11 @@ class VideoPlayerViewController: UIViewController {
 
 
 
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
         timer?.invalidate()
         timer = nil
-        
-        NotificationCenter.default.removeObserver(self)
         print("VIEW DISAPPEAR")
         if (webServer != nil) {
             webServer.stop()
@@ -166,6 +154,12 @@ class VideoPlayerViewController: UIViewController {
         webServer = nil
         mediaPlayer.stop()
         self.mediaPlayer.media = nil
+    }
+    deinit {
+        debugPrint("Deinit VideoPlayerViewCOntroller ")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
     
     

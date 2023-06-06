@@ -49,6 +49,7 @@ class ViewController: UIViewController{
     // MARK: - View Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkIfLoggedIn()
         setDataSourceForLanguageDropDown()
         emailTextFIeld.delegate = self
         if let _ = self.emailTextFIeld.placeholder{
@@ -117,6 +118,25 @@ class ViewController: UIViewController{
 
     
     // MARK: - Custom Methods
+    func checkIfLoggedIn(){
+        if (User.isLogged()) {
+            DispatchQueue.main.async {
+                let storyboard = UIStoryboard(name: "MainMenu", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
+                if let window = (UIApplication.shared.windows.first(where: { $0.isKeyWindow })){
+                    window.rootViewController = vc
+                    window.makeKeyAndVisible()
+                }
+            }
+            IPTV.initialize() {
+                //TODO: watermark
+                Gateway.notifyConnectedAdmin {
+                }
+                IPTV.connectionState = .connected
+            }
+            return
+            }
+    }
     func login() {
         print("login()")
         

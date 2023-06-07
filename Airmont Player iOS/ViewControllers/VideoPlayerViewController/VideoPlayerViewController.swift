@@ -76,7 +76,9 @@ class VideoPlayerViewController: UIViewController {
         mediaPlayer = VLCMediaPlayer(options: ["--ipv4-timeout=2000"])
         //
         let orientation = UIDevice.current.orientation
-        mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:(orientation.isPortrait == true ? "3:4" : "4:3" as NSString).utf8String)
+        
+        //mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:(orientation.isPortrait == true ? "3:4" : "4:3" as NSString).utf8String)
+        mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:(orientation.isPortrait == true ? "16:9" : "4:3" as NSString).utf8String)
         mediaPlayer.libraryInstance.debugLogging = false;
         mediaPlayer.delegate = self
         mediaPlayer.drawable = movieView

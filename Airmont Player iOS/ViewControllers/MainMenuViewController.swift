@@ -83,7 +83,7 @@ class MainMenuViewController: UIViewController {
     @IBAction func powerButtonPressed(_ sender: UIButton) {
         debugPrint("powerButtonPressed")
         User.accessToken = nil
-       
+        UserDefaults.standard.set(nil, forKey: "accessToken")
         //User.resetUserData()
         URLSession.shared.invalidateAndCancel()
         URLSession.shared.reset(completionHandler: {

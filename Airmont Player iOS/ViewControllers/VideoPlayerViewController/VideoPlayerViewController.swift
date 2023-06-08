@@ -120,11 +120,10 @@ class VideoPlayerViewController: UIViewController {
     }
     func handleOrientationChange() {
         let currentOrientation = UIDevice.current.orientation
-        
         switch currentOrientation {
         case .portrait, .portraitUpsideDown:
             debugPrint(".portrait, .portraitUpsideDown")
-            mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:("3:4" as NSString).utf8String)
+            mediaPlayer.videoAspectRatio = UnsafeMutablePointer<CChar>(mutating:("16:9" as NSString).utf8String)
             mediaPlayer.libraryInstance.debugLogging = false;
             mediaPlayer.delegate = self
             mediaPlayer.drawable = movieView
